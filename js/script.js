@@ -58,15 +58,24 @@ for (var i = 0; i < students.length; i++){
 
 // Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
-var nome = prompt('Inserisci il tuo nome');
-var cognome = prompt('Inserisci il tuo cognome');
-var eta = parseInt(prompt('Inserisci la tua età'));
+// var nome = prompt('Inserisci il tuo nome');
+// var cognome = prompt('Inserisci il tuo cognome');
+// var eta = parseInt(prompt('Inserisci la tua età'));
+//
+// students.push({
+//     'nome': nome,
+//     'cognome': cognome,
+//     'eta': eta,
+// });
 
-students.push({
-    'nome': nome,
-    'cognome': cognome,
-    'eta': eta,
-});
+//Con oggetto di prompt
+var newStudent  = {
+  'nome': prompt('Inserisci il tuo nome'),
+  'cognome': prompt('Inserisci il tuo cognome'),
+  'eta': parseInt(prompt('Inserisci la tua età')),
+}
+
+students.push(newStudent);
 
 // Ciclo per lista con solo nomi e cognomi
 
